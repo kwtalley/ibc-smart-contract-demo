@@ -24,3 +24,10 @@ build/provenanced -t --home build/run/provenanced add-genesis-account relayer 10
 ```
 
 2. confirm ports, keys, etc in the relayer config. example included in this repo.
+
+
+## Running the demo
+1. `setup_local_chain.sh` and `setup_remote_chain.sh` (these configure and start the 2 chains)
+2. `store_and_init_local_contract.sh` and `store_and_init_remote_contracts.sh`
+3. `init_and_start_relayer.sh` for the relayer (takes several transactions to reach the `running` state)
+4. `execute_contract.sh` performs a simple packet send from local -> remote with a final response back to local
